@@ -24,12 +24,44 @@
     <div class="container">
         <div id="data-info" class="row">
             <div class="column cards">
-               <div id="weather">
+                <div class="weather">
 
-               </div>
+                </div>
+                <div class="weather">
+
+                </div>
+                <div class="weather">
+
+                </div>
+                <div class="weather">
+
+                </div>
+                <div class="weather">
+
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <form class="column justify-center align-center text-center gap-10">
+                    <label for="setMarker">Search Location:</label>
+                    <input type="text" name="setMarker" id="setMarker">
+                    <button id="setMarkerButton">Enter</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="button-group">
+                        <button id="5">Zoom Level: 5</button>
+                        <button id="15">Zoom Level: 15</button>
+                        <button id="20">Zoom Level: 20</button>
+                    </div>
+                </div>
+            </div>
             <div id='map' style='width: 500px; height: 500px; z-index: 0; border-radius: 10px;'></div>
+            </div>
         </div>
     </div>
 </div>
@@ -43,10 +75,12 @@
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
         center: [-74.5, 40], // starting position [lng, lat]
         zoom: 9, // starting zoom
+
     });
 </script>
 <script src="js/utils.js"></script>
 <script src="js/jquery-minified.js"></script>
+<script src="js/jquery-uncompressed.js"></script>
 <script src="js/weather_map.js"></script>
 </body>
 </html>
