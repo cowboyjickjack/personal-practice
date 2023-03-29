@@ -13,7 +13,7 @@
 //     test.innerHTML = htmlString;
 // };
 
-/** GETTING THE CURRENT WEATHER DATA **/
+/** GETTING THE CURRENT WEATHER DATA AND LOOPING 5 TIMES **/
 for (let i = 1; i <= 5; i++) {
     $.get(`https://api.openweathermap.org/data/2.5/weather?lat=${SALat}&lon=${SALong}&appid=${WEATHERMAP_API_KEY}&units=imperial`).done(data=> {
         const time = new Date();
@@ -46,5 +46,7 @@ document.getElementById('setMarkerButton').addEventListener('click', event => {
         // this centers the map on the input coords
         map.setCenter(coords);
     });
+    let inputAddress = address;
+    // TODO: figure out how to use the saved input of the address and then get coordinates to then plug into the current weather api
 });
 })();
