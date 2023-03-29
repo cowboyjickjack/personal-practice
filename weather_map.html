@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map Project</title>
+    <script src="js/keys.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/weather_map.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <nav>
+                    <h1>Weather Map!</h1>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="data-info" class="row">
+            <div class="column cards">
+                <div id="currentWeather">
+
+                </div>
+                <div id="dayTwo">
+
+                </div>
+                <div id="dayThree">
+
+                </div>
+                <div id="dayFour">
+
+                </div>
+                <div id="dayFive">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <form class="column justify-center align-center text-center gap-10">
+                    <label for="setMarker">Search Location:</label>
+                    <input type="text" name="setMarker" id="setMarker">
+                    <button id="setMarkerButton">Enter</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="button-group">
+                    <button id="5">Zoom Level: 5</button>
+                    <button id="15">Zoom Level: 15</button>
+                    <button id="20">Zoom Level: 20</button>
+                </div>
+                <div id='map' style='width: 1100px; height: 600px; z-index: 0; border-radius: 10px;'></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------- SCRIPTS ---------->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script>
+    mapboxgl.accessToken = MAPBOX_API_TOKEN;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/outdoors-v12', 'width': '50%', // style URL
+        center: [-98.4936, 29.4241], // starting position [lng, lat]
+        zoom: 10, // starting zoom
+    });
+
+    const SALong = -98.4936;
+    const SALat = 29.4241;
+
+</script>
+<script src="js/utils.js"></script>
+<script src="js/jquery-minified.js"></script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>
