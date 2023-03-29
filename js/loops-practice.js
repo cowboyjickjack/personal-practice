@@ -14,3 +14,12 @@ const biggerNumber = (x, y) => {
 const  findTheSign = (x, y, z) => {
     return (x * y * z);
 }
+
+// TODO: Figuring out how to loop with jQuery inputs
+
+let test = document.getElementById('test');
+let htmlString = '';
+for (let i = 1; i <= 5; i++) {
+    htmlString += `<div class="test">hello</div>`;
+}
+test.innerHTML = htmlString;
