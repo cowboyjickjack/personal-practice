@@ -47,3 +47,10 @@ function sortThreeNumbers (x, y, z) {
         }
     }
 };
+
+// TODO: Create a loop that decrements by five, starting at 100 and ends at 5.
+ for (let i = 105; i >= 1; i-=5) {
+        // console.log(i - 5);
+    };
+
+ // TODO:
