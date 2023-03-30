@@ -3,8 +3,8 @@ import {currentWeather} from "./weather.js";
 (async () => {
 
     let response = await currentWeather();
-    let data = await response.json();
-    console.log( data);
+    return response;
+
 
 // const query = searchInput.value // selects node
 // /** EVENT LISTENERS **/
