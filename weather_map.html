@@ -5,7 +5,7 @@
     <title>Weather Map Project</title>
     <script src="js/keys.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/weather_map.css">
@@ -72,10 +72,9 @@
     mapboxgl.accessToken = MAPBOX_API_TOKEN;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
+        style: 'mapbox://styles/mapbox/outdoors-v12', // style URL
+        center: [-98.48962, 29.42692], // starting position [lng, lat]
         zoom: 9, // starting zoom
-
     });
 </script>
 <script src="js/utils.js"></script>

@@ -26,7 +26,9 @@ export const currentWeather = async () => {
 
 export const weatherForecast = async () => {
     try {
-
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=${WEATHERMAP_API_KEY}`);
+        let data = response.json();
+        return data;
     } catch (error) {
         console.log(error);
     }
