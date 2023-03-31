@@ -24,6 +24,10 @@ body {
     background-color: #7cb6d9;
 }
 
+/*div.row.bottom-section {*/
+/*    */
+/*}*/
+
 /*div.row {*/
 /*    display: flex;*/
 /*    justify-content: center;*/
@@ -45,10 +49,20 @@ h1 {
     color: white;
 }
 
+/* SEARCH BAR */
+
 label {
     font-size: 32px;
     font-family: 'Roboto Mono', sans-serif;
     color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+input {
+    display: flex;
+    width: 400px;
+    align-content: center;
 }
 
 .button-group {
