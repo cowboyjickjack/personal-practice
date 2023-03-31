@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Map Project</title>
-    <script src="js/keys.js"></script>
+
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/weather_map.css">
@@ -69,20 +70,18 @@
 
 <!---------- SCRIPTS/MAPBOX ---------->
 <script>
-    const SALong = -98.4936;
-    const SALat = 29.4241;
-    mapboxgl.accessToken = MAPBOX_EXERCISE_TOKEN;
+    mapboxgl.accessToken = MAPBOX_API_TOKEN;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [SALong, SALat], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        zoom: 10, // starting zoom
+        center: [-98.4916, 29.4252] // [lng, lat]
     });
 </script>
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/jquery-minified.js"></script>
-<script src="js/jquery-uncompressed.js"></script>
+<!--<script src="js/jquery-uncompressed.js"></script>-->
 <script type="module" src="js/weather_map.js"></script>
 </body>
 </html>
