@@ -24,19 +24,19 @@ body {
     background-color: #7cb6d9;
 }
 
-div.row {
-    display: flex;
-    justify-content: center;
-}
+/*div.row {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
 div h3 {
     display: flex;
     font-size: 22px;
 }
 
-div h6 {
-    display: flex;
-}
+/*div h6 {*/
+/*    display: flex;*/
+/*}*/
 
 h1 {
     display: flex;
@@ -58,15 +58,15 @@ label {
 /** MAP STYLES **/
 
 button#5, button#15, button#20{
-    display: flex;
-    position: relative;
-    background-color: #0a6aa9;
-    color: white;
-    border-radius: 2px;
+    /*display: flex;*/
+    /*position: relative;*/
+    /*background-color: #0a6aa9;*/
+    /*color: white;*/
+    /*border-radius: 2px;*/
 }
 button {
-    display: flex;
-    background-color: #0a6aa9;
-    color: white;
-    border-radius: 2px;
+    /*display: flex;*/
+    /*background-color: #0a6aa9;*/
+    /*color: white;*/
+    /*border-radius: 2px;*/
 }

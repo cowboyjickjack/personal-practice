@@ -28,8 +28,19 @@ export const weatherForecast = async () => {
     try {
         const SALong = -98.4936;
         const SALat = 29.4241;
-        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${SALat}&lon=${SALong}&appid=${WEATHERMAP_API_KEY}&units=imperial`)
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${SALat}&lon=${SALong}&appid=${WEATHERMAP_API_KEY}&units=imperial`)
+        console.log(response.json())
     } catch (error) {
         console.log(error);
     }
 }
+
+
+
+
+/** EVENT LISTENERS **/
+document.getElementById('setMarkerButton').addEventListener('click', event => {
+    // prevents form from submitting by clicking button, and resets its function
+    event.preventDefault();
+
+});
