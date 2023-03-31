@@ -26,7 +26,9 @@ export const currentWeather = async () => {
 
 export const weatherForecast = async () => {
     try {
-
+        const SALong = -98.4936;
+        const SALat = 29.4241;
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${SALat}&lon=${SALong}&appid=${WEATHERMAP_API_KEY}&units=imperial`)
     } catch (error) {
         console.log(error);
     }
