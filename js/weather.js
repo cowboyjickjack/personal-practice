@@ -53,3 +53,11 @@ export const weatherForecast = async () => {
 //         map.setCenter(coords);
 //
 // });
+
+document.getElementById('setMarkerButton').addEventListener('click', event => {
+    event.preventDefault();
+
+    const address = document.getElementById('setMarker').value;
+    console.log(address);
+
+})
