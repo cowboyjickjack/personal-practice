@@ -62,7 +62,7 @@
             </div>
         </div>
         <div>
-            <div id='map' style='width: 800px; height: 500px; border-radius: 10px; justify-content: center'></div>
+            <div id='map' style='width: 800px; height: 500px; margin-bottom: 40px; border-radius: 10px; justify-content: center'></div>
         </div>
     </div>
 </div>
@@ -70,11 +70,13 @@
 <!---------- SCRIPTS ---------->
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script>
+    const SALong = -98.4936;
+    const SALat = 29.4241;
         mapboxgl.accessToken = 'pk.eyJ1IjoianJ1ZWRhcyIsImEiOiJja29lZzZzaHAwYTNtMm5ucjAzajdleDkyIn0.yY13LnqWTQzsI8ESEwK-1A';
         const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
+        center: [SALong, SALat], // starting position [lng, lat]
         zoom: 9 // starting zoom
     });
 </script>
