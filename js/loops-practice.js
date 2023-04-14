@@ -46,11 +46,64 @@ function sortThreeNumbers (x, y, z) {
             console.log(z + ", " + y + ", " +x);
         }
     }
-};
+}
 
 // TODO: Create a loop that decrements by five, starting at 100 and ends at 5.
- for (let i = 105; i >= 1; i-=5) {
+ for (let i = 100; i >= 10; i-=5) {
         // console.log(i - 5);
-    };
+    }
 
- // TODO:
+ // TODO: Write a JavaScript for loop that will iterate from 0 to 15.
+//   For each iteration, it will check if the current number is odd or even,
+//   and display a message to the screen.
+const evenOrOdd = () => {
+    for (let i = 0; i <= 15; i++){
+        if (i % 2 === 0){
+            console.log(`${i} is even`);
+        } else {
+            console.log(`${i} is odd`);
+        }
+    }
+}
+// TODO: Write a JavaScript program which computes the average marks of the following students.
+//   Then, this average is used to determine the corresponding grade.
+const getGrade = (grade) => {
+     if (grade === 100 || grade >= 90 && grade <= 100){
+         return "A"
+     } else if (grade <= 89 && grade >= 80){
+        return "B"
+     } else if (grade <= 79 && grade >= 70){
+         return "C";
+     } else if (grade <= 69 && grade >= 60){
+         return "D";
+     } else if (grade <= 59){
+         return "F";
+     } else {
+         return "INVALID SCORE";
+     }
+}
+
+// TODO: Write a JavaScript program which iterates the integers from 1 to 100.
+//  But for multiples of three print "Fizz" instead of the number and
+//  for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+const fizzBuzz = () => {
+     for (let i = 1; i <= 100; i++){
+         if (i % 15 === 0) console.log("FizzBuzz");
+         else if (i % 3 === 0) console.log("Fizz");
+         else if (i % 5 === 0) console.log("Buzz");
+         else console.log(i);
+     }
+}
+
+// TODO: Write a JavaScript program to construct the following pattern:
+//  *
+//  * *
+//  * * *
+//  * * * *
+//  * * * * *
+
+function starFun(){
+
+}
+
